@@ -2513,7 +2513,7 @@
 
 			config {
 				pins = "gpio91";
-				bias-pull-down; 
+				bias-disable;
 				drive-strength = <2>;
 			};
 		};

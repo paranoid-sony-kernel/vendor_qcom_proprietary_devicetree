@@ -1126,12 +1126,12 @@
 	qupv3_se8_i2c_pins: qupv3_se8_i2c_pins {
 		qupv3_se8_i2c_sda_active: qupv3_se8_i2c_sda_active {
 			mux {
-				pins = "gpio0";
-				function = "qup2_se0_l0_mirb";
+				pins = "gpio56";
+				function = "qup2_se0_l0_mira";
 			};
 
 			config {
-				pins = "gpio0";
+				pins = "gpio56";
 				drive-strength = <2>;
 				bias-pull-up;
 			};
@@ -1139,12 +1139,12 @@
 
 		qupv3_se8_i2c_scl_active: qupv3_se8_i2c_scl_active {
 			mux {
-				pins = "gpio1";
-				function = "qup2_se0_l1_mirb";
+				pins = "gpio57";
+				function = "qup2_se0_l1_mira";
 			};
 
 			config {
-				pins = "gpio1";
+				pins = "gpio57";
 				drive-strength = <2>;
 				bias-pull-up;
 			};
@@ -1152,12 +1152,12 @@
 
 		qupv3_se8_i2c_sleep: qupv3_se8_i2c_sleep {
 			mux {
-				pins = "gpio0", "gpio1";
+				pins = "gpio56", "gpio57";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio0", "gpio1";
+				pins = "gpio56", "gpio57";
 				drive-strength = <2>;
 				bias-disable;
 			};
